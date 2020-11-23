@@ -1,3 +1,4 @@
+import ("https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js")
 
 function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
