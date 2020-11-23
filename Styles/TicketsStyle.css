@@ -229,6 +229,10 @@ input[type=number]{
     font-size: 8em;
 }
 
+@media (max-height: 585px) {
+    .dropdown-content {height: 300%}
+}
+
 @media (max-width: 1610px) {
     #logo {
         margin-top: 15px;
