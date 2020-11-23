@@ -130,6 +130,9 @@ header #logo span {
     text-decoration: underline
 }
 
+#content a {color: azure;}
+#content a:hover {color: darkgray; text-decoration: underline}
+
 .container {
     width: 450px;
     height: 500px;
