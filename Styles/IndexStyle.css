@@ -99,6 +99,7 @@ header #logo span {
     overflow: auto;
     right: 0;
     z-index: 1;
+    overflow-y: scroll;
 }
 
 .dropdown-content a {
@@ -167,7 +168,15 @@ header #logo span {
 }
 
 @media (max-height: 1200px) {
-    #top h1 {padding-top: 5%;}
+    #top h1 {padding-top: 1%;}
+}
+
+@media (max-height: 425px) {
+    #top h1 {display: none}
+}
+
+@media (max-height: 585px) {
+    .dropdown-content {height: 300%}
 }
 
 @media (max-width: 1610px) {
