@@ -168,10 +168,10 @@ header #logo span {
 }
 
 @media (max-height: 1200px) {
-    #top h1 {padding-top: 1%;}
+    #top h1 {padding-top: 2%;}
 }
 
-@media (max-height: 425px) {
+@media (max-height: 470px) {
     #top h1 {display: none}
 }
 
