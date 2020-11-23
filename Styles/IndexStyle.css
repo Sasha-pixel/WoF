@@ -132,6 +132,7 @@ header #logo span {
     padding-top: 40%;
     font-size: 5em;
 }
+
 #content {
     margin: 30px 10% 30px 10%;
     text-align: justify;
@@ -163,6 +164,10 @@ header #logo span {
     bottom: 30px;
     margin: 0 2% 0 94%;
     cursor: pointer;
+}
+
+@media (max-height: 1200px) {
+    #top h1 {padding-top: 5%;}
 }
 
 @media (max-width: 1610px) {
