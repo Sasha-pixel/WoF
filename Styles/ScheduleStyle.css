@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Suez+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+/*body, html {*/
+/*    width: 100%;*/
+/*    height: 4000px;*/
+/*}*/
+
+body {
+    background-color: #110025;
+    /*background: linear-gradient(to bottom, #110025, darkslateblue);*/
+    /*background: linear-gradient(to bottom, red, orange, yellow, green, blue, darkblue, purple, red);*/
+    font-family: Trebuchet MS, Helvetica;
+}
+
+/*стиль шапки*/
+header {
+    width: 100%;
+    padding: 10px 0.5% 0px 0.5%;
+    background: black;
+    border-radius: 0 0 0 40px;
+    float: left;
+    position: fixed;
+}
+
+header #logo {
+    color: azure;
+    cursor: default;
+    text-align: center;
+}
+
+header #logo span {
+    font-size: 1.8em;
+    line-height: 50px;
+    margin-left: 40px;
+    font-family: 'Suez One', serif;
+}
+
+/*стиль меню*/
+#about #NotAMenu{
+    text-align: center;
+    font-size: 1.1em;
+    line-height: 40px;
+    margin-bottom: 10px;
+}
+
+#about #NotAMenu> a {
+    color: azure;
+    border: 1px solid azure;
+    padding: 8px;
+    text-decoration: none;
+}
+
+#about #NotAMenu> a:hover {
+    background: azure;
+    color: black;
+    transition: 0.5s;
+    text-decoration: none
+}
+#about #NotAMenu> a:not(:last-child) {margin-right: 7%;}
+
+.dropbtn {
+    margin-top: 5px;
+    margin-right: 15px;
+    background-color: black;
+    /*border-radius: 10px;*/
+    /*float: right;*/
+    color: azure;
+    padding: 5px;
+    font-size: 4em;
+    transition: 0.3s;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: darkslateblue;
+    /*box-shadow:0px -10px 0 darkslateblue inset;*/
+}
+
+#Menu {
+    float: right;
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    border-radius: 10px;
+    margin-right: 15px;
+    display: none;
+    position: absolute;
+    background-color: azure;
+    min-width: 460px;
+    overflow: auto;
+    right: 0;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 3em;
+    transition: 0.5s;
+}
+
+.dropdown-content a:hover {background-color: darkgray;}
+
+.show {display: block;}
+
+#content {
+    margin: 60px 10% 30px 10%;
+    text-align: justify;
+    float: left;
+    width: 80%;
+    color: azure;
+    font-size: 1.1em;
+}
+
+#content h1 {
+    margin: 25px;
+    text-align: center;
+    text-decoration: underline
+    /*position: relative;*/
+}
+
+#content a {color: azure;}
+#content a:hover {color: darkgray; text-decoration: underline}
+
+table {
+    width: 100%;
+    text-align: left;
+    border-collapse: separate;
+    border-spacing: 6px;
+}
+
+th {
+    font-size: 24px;
+    padding: 15px;
+    border: 3px solid azure;
+    background: black;
+}
+
+td {
+    padding: 15px;
+    border: 1px solid azure;
+}
+
+tr {background: darkslateblue;}
+
+tr:hover:not(:first-child) {
+    background: black;
+    color: azure;
+    transition: 0.4s;
+}
+
+.back_up {
+    float: left;
+    width: 4%;
+    color: azure;
+    font-size: 3em;
+    text-align: center;
+    border: 2px solid azure;
+    display: none;
+    text-decoration: none;
+    position: fixed;
+    bottom: 30px;
+    margin: 0 2% 0 94%;
+    cursor: pointer;
+}
+
+@media (max-width: 1610px) {
+    #logo {
+        margin-top: 15px;
+        float: left;
+        width: 70%;
+        font-size: 3em;
+    }
+    #about #NotAMenu {display: none;}
+    #about #Menu .dropbtn {display: block;}
+    #about #Menu #navbar {display: none;}
+    #content {font-size: 2em;}
+    .back_up {
+        width: 6%;
+        margin: 0 1% 0 90%;
+        border: none;
+        font-size: 9em;
+    }
+    th {display: none;}
+    tr {display: block; margin: 10px;}
+    td {display: flex;justify-content: space-between;font-size: 36px;text-align: right;}
+    td::before {content: attr(data-label);font-weight: bold;margin-right: 20px;}
+}
+
+@media (min-width: 1611px) {
+    #logo {
+        float: left;
+        width: 30%;
+        font-size: 1.1em;
+    }
+    #about #NotAMenu{
+        float: right;
+        width: 67%;
+    }
+    #about #Menu{display: none}
+    .back_up:hover {
+        border: 2px solid azure;
+        background-color: darkslateblue;
+        transition: 0.3s;
+    }
+}

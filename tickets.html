@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Booking tickets</title>
+    <link rel="stylesheet" href="Styles/TicketsStyle.css">
+    <link rel="icon" href="Images/favicon.ico">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+<header>
+    <div id="logo">
+        <span>World of films</span>
+    </div>
+    <div id="about">
+        <div id="NotAMenu">
+            <a href="index.html">главная</a>
+            <a href="mostPopular.html">популярные кинофестивали</a>
+            <a href="schedule.html">расписание кинофестивалей</a>
+            <a href="history.html">история кинофестивалей</a>
+        </div>
+        <div id="Menu">
+            <button onclick="myFunction()" class="dropbtn">Меню</button>
+            <ul id="myDropdown" class="dropdown-content">
+                <a href="index.html">главная</a>
+                <li><a href="mostPopular.html">популярные кинофестивали</a></li>
+                <li><a href="schedule.html">расписание кинофестивалей</a></li>
+                <li><a href="history.html">история кинофестивалей</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+<div id="content">
+    <h1>Забронировать билеты</h1>
+    <div class="container">
+        <img src="Images/darkslateblue.jpg">
+        <div>
+            <input type="text" name="FIO" placeholder="Введите ваши фамилию и имя">
+            <input type="text" name="phone number" placeholder="Введите ваш номер телефона">
+            <input type="text" name="email" placeholder="Введите адрес эл.почты">
+            <div class="quantity-block">
+                <button class="quantity-arrow-minus" onclick="arrows()"> - </button>
+                <input class="quantity-num" type="number" name="count" placeholder="Введите кол-во билетов">
+                <button class="quantity-arrow-plus"  onclick="arrows()"> + </button>
+            </div>
+            <input type="submit" name="enter" placeholder="Забронировать" onclick="getInfo()">
+        </div>
+    </div>
+    <div class="info"><span>Спасибо, что воспользовались нашим сервисом.</br>
+    Как только стартует продажа билетов на выбранный Вами кинофестиваль,
+        Вам на электронную почту придёт уведомление с ссылкой на страницу,
+    на которой вы сможете оплатить билеты. Хорошего Вам дня.</span></div>
+    <div class="back"><a href="schedule.html">&#9031;</a></div>
+</div>
+<script src="scripts/IndexScript.js"></script>
+</body>
+</html>
