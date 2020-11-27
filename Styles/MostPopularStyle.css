@@ -196,7 +196,7 @@ header #logo span {
     #about #NotAMenu {display: none;}
     #about #Menu .dropbtn {display: block;}
     #about #Menu #navbar {display: none;}
-    #content {font-size: 2em;}
+    #content {font-size: 2em; margin-top: 80px;}
     .carousel-cell {width: 60%; margin-right: 21%}
     .back_up {
         width: 6%;
