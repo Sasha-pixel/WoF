@@ -290,8 +290,8 @@ input[type="number"]{
         cursor: pointer;
         font-size: 45px;
         padding: 10px 36px;
-        width: 120px;
-        height: 120px;
+        width: 100px;
+        height: 100px;
         box-sizing: border-box;
         border: none;
         border-radius: 50%;
