@@ -177,15 +177,15 @@ input[type="number"] {
     text-align: center;
 }
 
-input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button {
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
     margin: 0;
 }
 /* Для Firefox */
-input[type=number]{
+input[type="number"]{
     -moz-appearance: textfield;
 }
 
@@ -265,22 +265,22 @@ input[type=number]{
         margin-bottom: 70px;
     }
     input[type="number"] {
-        width: 515px;
+        width: 510px;
         height: 120px;
         font-size: 45px;
         border-radius: 25px;
         margin-bottom: 70px;
         text-align: center;
     }
-    input[type=number]::-webkit-inner-spin-button,
-    input[type=number]::-webkit-outer-spin-button {
+    input[type="number"]::-webkit-inner-spin-button,
+    input[type="number"]::-webkit-outer-spin-button {
         -webkit-appearance: none;
         -moz-appearance: none;
         appearance: none;
         margin: 0;
     }
     /* Для Firefox */
-    input[type=number]{
+    input[type="number"]{
         -moz-appearance: textfield;
     }
     .quantity-arrow-minus,
